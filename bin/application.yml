@@ -1,0 +1,9 @@
+---
+info:
+  component: Swagger Single
+
+spring:
+  profiles: default
+
+server:
+  port: 8012
