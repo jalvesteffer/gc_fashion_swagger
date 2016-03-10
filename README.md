@@ -10,3 +10,4 @@ Update application.yaml file under resources and add the list to GatewaySwaggerR
 
 Docker file is also available to create an image. 
 
+If you dont use Zuul or Eureka, please remove the dependency on it from Gradile file and Application file.
