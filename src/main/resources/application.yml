@@ -23,13 +23,10 @@ eureka:
     healthcheck:
       enabled: true
 
-nh: 
-  cos: 
-    swagger: 
-      baseurl: http://localhost
-      services: 
-        ms1: 
-          url: ${swagger.baseurl}:8040/v2/api-docs?group=ms1
-        ms2: 
-          url: ${swagger.baseurl}:8050/v2/api-docs?group=ms2
-
+swagger: 
+  baseurl: http://localhost
+    services: 
+      ms1: 
+        url: ${swagger.baseurl}:8040/v2/api-docs?group=ms1
+      ms2: 
+        url: ${swagger.baseurl}:8050/v2/api-docs?group=ms2
