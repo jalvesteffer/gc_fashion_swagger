@@ -1,4 +1,4 @@
-package doc;
+package documentation.single.swagger;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,10 +6,10 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 //import org.springframework.cloud.client.discovery.DiscoveryClient;
 //import org.springframework.cloud.netflix.zuul.filters.ProxyRouteLocator;
 import org.springframework.context.annotation.Primary;
-import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
 import springfox.documentation.swagger.web.SwaggerResource;
@@ -17,27 +17,36 @@ import springfox.documentation.swagger.web.SwaggerResourcesProvider;
 
 @Component
 @Primary
+@EnableAutoConfiguration
 public class GatewaySwaggerResourceProvider implements SwaggerResourcesProvider {
 
-	@Autowired
-	private Environment env;
+    @Autowired
+    private SwaggerServicesConfig swaggerServiceList;
 
     private final Logger log = LoggerFactory.getLogger(GatewaySwaggerResourceProvider.class);
 
+    //Can be used to get the list from registry/gateway later.
     //@Inject
     //private ProxyRouteLocator routeLocator;
 
     //@Inject
     //private DiscoveryClient discoveryClient;
+    
+    public GatewaySwaggerResourceProvider() {
 
-    @Override
+    }
+
+	@Override
     public List<SwaggerResource> get() {
         List<SwaggerResource> resources = new ArrayList<>();
 
-        //Add the default swagger resource that correspond to the gateway's own swagger doc
-        resources.add(swaggerResource("service-1", env.getRequiredProperty("swagger.services.ms1.url"), "2.0"));
-        resources.add(swaggerResource("service-2", env.getRequiredProperty("swagger.services.ms2.url"), "2.0"));
+        //Add the default swagger resource that correspond to the gateway's own swagger doc        
+        //resources.add(swaggerResource("Default", env.getRequiredProperty("url"), "2.0"));
 
+        swaggerServiceList.getServices().forEach(service -> {
+        	resources.add(swaggerResource(service.getName(),service.getUrl(), service.getVersion()));
+        });
+        
         //Add the registered microservices swagger docs as additional swagger resources
         //Map<String, String> routes = routeLocator.getRoutes();
         //routes.forEach((path, serviceId) -> {
@@ -54,5 +63,6 @@ public class GatewaySwaggerResourceProvider implements SwaggerResourcesProvider 
         swaggerResource.setSwaggerVersion(version);
         return swaggerResource;	
     }
+    
 
 }
