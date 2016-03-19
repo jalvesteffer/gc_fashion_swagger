@@ -27,8 +27,10 @@ documentation:
 
 Docker file is also available to create an image. 
 
-#### Future enhacement:
-   Need to enhance the application to retrieve the list from Gateway or registry (e.g. Eureka or Zuul) so that the list will be dynamic.
+
+#### Future enhacements:
+* Enhance the application to retrieve the list from API Gateway or Registry (e.g. Eureka or Zuul) so that the list will be dynamic.
+
 
 #### Remember:
 * If you dont use Zuul or Eureka, please remove the dependency on it from Gradile and Application files.
