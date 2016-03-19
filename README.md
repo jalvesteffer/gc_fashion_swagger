@@ -24,7 +24,7 @@ documentation:
         version: 2.0
 
 
-## Future enhacement:
+### Future enhacement:
    Need to enhance the application to retrieve the list from Gateway or registry (e.g. Eureka or Zuul) so that the list will be dynamic.
 
 Docker file is also available to create an image. 
