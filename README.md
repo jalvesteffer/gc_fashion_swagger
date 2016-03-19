@@ -1,4 +1,4 @@
-# microservices-single-swagger
+# microservices-single-swagger (aggregate)
 Repository to showcase how to create a SpringBoot *Single/Aggregate* SpringFox-Swagger Documentation Server for all your micro services.
 
 ### Challenge:
