@@ -7,7 +7,7 @@ Repository to showcase how to create a SpringBoot *Single/Aggregate* SpringFox-S
 ### Solution:
 'microservices-single-swagger' is a springboot application and creates a documentation server where all the available microservices can be accessed. On the springfox swagger documentation page from this documentation server, use will be able to view all the microservices available (drop down on top) and select any service to view the documentation without leaving the page.
 
-### Configuration:
+#### Configuration:
 In the **application.yaml** file, you can configure all your microservice swagger URLs.
 
 ```
@@ -28,11 +28,11 @@ documentation:
 Docker file is also available to create an image. 
 
 
-#### Future enhacements:
+##### Future enhacements:
 * Enhance the application to retrieve the list from API Gateway or Registry (e.g. Eureka or Zuul) so that the list will be dynamic.
 
 
-#### Remember:
+##### Remember:
 * If you dont use Zuul or Eureka, please remove the dependency on it from Gradile and Application files.
 * Cross origin Resource Sharing (CORS) need to be enabled on the micriservices server. Please let me know if you need details on how to configure the same in SpringBoot application.
 
