@@ -1,13 +1,13 @@
 # microservices-single-swagger
 Repository to showcase how to create a single SpringFox-Swagger Documentation Server for all your micro services.
 
-## Challenge:
+### Challenge:
    SpringFox-Swagger generates different URL/document for each microservice. There is no way currently to view complete list of micro servies available or the details of all micro services at one place.
 
-## Solution:
+### Solution:
 'microservices-single-swagger' is a springboot application and creates a documentation server where all the available microservices can be accessed. On the springfox swagger documentation page from this documentation server, use will be able to view all the microservices available (drop down on top) and select any service to view the documentation without leaving the page.
 
-## Configuration:
+### Configuration:
 In the application.yaml file, you can configure all your microservice swagger URLs.
 
 documentation: 
