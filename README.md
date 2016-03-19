@@ -10,6 +10,7 @@ Repository to showcase how to create a single SpringFox-Swagger Documentation Se
 ### Configuration:
 In the application.yaml file, you can configure all your microservice swagger URLs.
 
+```
 documentation: 
   baseurl: http://localhost
   swagger: 
@@ -22,6 +23,7 @@ documentation:
         name: Service2
         url: ${documentation.baseurl}:8050/v2/api-docs?group=service2
         version: 2.0
+```
 
 Docker file is also available to create an image. 
 
