@@ -1,5 +1,5 @@
 # microservices-single-swagger
-Repository to showcase how to create a SpringBoot *Single* SpringFox-Swagger Documentation Server for all your micro services.
+Repository to showcase how to create a SpringBoot *Single/Aggregate* SpringFox-Swagger Documentation Server for all your micro services.
 
 ### Challenge:
    SpringFox-Swagger generates different URL/document for each microservice. There is no way currently to view complete list of micro servies available or the details of all micro services at one place.
