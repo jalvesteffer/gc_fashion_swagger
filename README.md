@@ -38,3 +38,5 @@ Docker file is also available to create an image.
 
 
 Thanks to @dilipkrish (SpringFox Member) & @jhipster.
+
+@dilipkrish mentioned that he is planning to add this to springfox swagger demos. So, you might be able to get this directly as part of swagger in future.
