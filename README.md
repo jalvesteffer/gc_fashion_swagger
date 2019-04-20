@@ -33,7 +33,7 @@ Docker file is also available to create an image.
 
 
 ##### Remember:
-* If you dont use Zuul or Eureka, please remove the dependency on it from Gradile and Application files.
+* If you use Zuul or Eureka, please add the dependency on it to and Application files.
 * Cross origin Resource Sharing (CORS) need to be enabled on the micriservices server. Please let me know if you need details on how to configure the same in SpringBoot application.
 
 
