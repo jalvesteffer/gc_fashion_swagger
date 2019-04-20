@@ -15,6 +15,12 @@ import org.springframework.stereotype.Component;
 import springfox.documentation.swagger.web.SwaggerResource;
 import springfox.documentation.swagger.web.SwaggerResourcesProvider;
 
+/**
+ * @author George Varghese
+ * @version 1.0
+ * https://github.com/varghgeorge
+ */
+
 @Component
 @Primary
 @EnableAutoConfiguration

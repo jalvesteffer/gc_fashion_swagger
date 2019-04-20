@@ -8,11 +8,15 @@ import org.springframework.context.annotation.ComponentScan;
 
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+/**
+ * @author George Varghese
+ * @version 1.0
+ * https://github.com/varghgeorge
+ */
+
 @SpringBootApplication
-@ComponentScan
-@EnableAutoConfiguration
 @EnableSwagger2
-@EnableDiscoveryClient
+@EnableConfigurationProperties({SwaggerServicesConfig.class,SwaggerServicesConfig.SwaggerServices.class})
 public class MsDocumentationApplication {
 
 	public static void main(String[] args) {
