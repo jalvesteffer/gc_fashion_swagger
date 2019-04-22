@@ -27,6 +27,8 @@ documentation:
 
 Docker file is also available to create an image. 
 
+![alt text](screenshots/aggregate-sample.jpg "Sample Aggregate screenshot")
+
 
 ##### Future enhacements:
 * Enhance the application to retrieve the list from API Gateway or Registry (e.g. Eureka or Zuul) so that the list will be dynamic.
