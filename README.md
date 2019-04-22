@@ -16,19 +16,20 @@ documentation:
   swagger: 
     services:   
       - 
-        name: Service1
+        name: <Service 1>
         url: ${documentation.baseurl}:8040/v2/api-docs?group=service1
         version: 2.0
       - 
-        name: Service2
+        name: <Service 2>
         url: ${documentation.baseurl}:8050/v2/api-docs?group=service2
         version: 2.0
 ```
 
 Docker file is also available to create an image. 
 
-Sample Screenshot of the Swagger APIs.  
+Sample screenshot of the swagger APIs dropdown from the configuration.   
 ![agreegate_sample](https://user-images.githubusercontent.com/16730490/56501884-1b946600-64d6-11e9-9bfb-6a80f401fe6f.png)
+
 
 ##### Future enhacements:
 * Enhance the application to retrieve the list from API Gateway or Registry (e.g. Eureka or Zuul) so that the list will be dynamic.
