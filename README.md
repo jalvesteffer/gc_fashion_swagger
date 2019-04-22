@@ -27,7 +27,7 @@ documentation:
 
 Docker file is also available to create an image. 
 
-![alt text](screenshots/aggregate-sample.png "Sample Aggregate screenshot")
+![alt text](https://github.com/varghgeorge/microservices-single-swagger/blob/master/screenshots/aggregate-sample.png "Sample Aggregate screenshot")
 
 ##### Future enhacements:
 * Enhance the application to retrieve the list from API Gateway or Registry (e.g. Eureka or Zuul) so that the list will be dynamic.
