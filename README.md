@@ -8,7 +8,7 @@ Repository to showcase how to create a SpringBoot *Single/Aggregate* SpringFox-S
 'microservices-documentation-server' is a springboot application and creates a documentation server where all the available microservices can be accessed. On the springfox swagger documentation page from this documentation server, use will be able to view all the microservices available (drop down on top) and select any service to view the documentation without leaving the page.
 
 #### Configuration:
-In the **application.yaml** file, you can configure all your microservice swagger URLs.
+In the **application.yaml** file, you can configure all your microservice swagger URLs. This is the only change we need to do.
 
 ```
 documentation: 
@@ -24,6 +24,16 @@ documentation:
         url: ${documentation.baseurl}:8050/v2/api-docs?group=service2
         version: 2.0
 ```
+
+If you would like to configure APIs from different servers, use complete URL.
+```
+      - 
+        name: <Service 3>
+        url: http://myserver.com/v2/api-docs?group=service3
+        version: 1.0
+```
+
+
 
 Docker file is also available to create an image. 
 
