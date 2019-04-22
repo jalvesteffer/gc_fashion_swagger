@@ -27,7 +27,7 @@ documentation:
 
 Docker file is also available to create an image. 
 
-![alt text](screenshots/aggregate-sample.jpg "Sample Aggregate screenshot")
+![alt text](aggregate-sample.jpg "Sample Aggregate screenshot")
 
 
 ##### Future enhacements:
