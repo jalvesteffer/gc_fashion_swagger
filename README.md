@@ -27,7 +27,8 @@ documentation:
 
 Docker file is also available to create an image. 
 
-![aggregate-sample](https://user-images.githubusercontent.com/16730490/56501488-9a889f00-64d4-11e9-89c5-53604c07c037.png)
+Sample Screenshot of the Swagger APIs.  
+![agreegate_sample](https://user-images.githubusercontent.com/16730490/56501884-1b946600-64d6-11e9-9bfb-6a80f401fe6f.png)
 
 ##### Future enhacements:
 * Enhance the application to retrieve the list from API Gateway or Registry (e.g. Eureka or Zuul) so that the list will be dynamic.
