@@ -1,4 +1,4 @@
-FROM java:8
+FROM java:11
 MAINTAINER George Varghese 
 LABEL Description="Image for swagger Single Documentation Server for Microservices" Version="1.0"
 VOLUME /tmp
