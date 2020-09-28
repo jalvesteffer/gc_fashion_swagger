@@ -13,13 +13,10 @@ documentation:
   swagger: 
     services:   
       - 
-        name: Service1
-        url: ${documentation.baseurl}:8040/v2/api-docs?group=service1
+        name: Shop
+        url: http://ec2-18-191-27-130.us-east-2.compute.amazonaws.com:8081/v2/api-docs?group=shop
         version: 2.0
-      - 
-        name: Service2
-        url: ${documentation.baseurl}:8050/v2/api-docs?group=service2
+      -
+        name: Sales
+        url: http://ec2-18-219-254-63.us-east-2.compute.amazonaws.com:8082/v2/api-docs?group=sales
         version: 2.0
-
- 
-    
